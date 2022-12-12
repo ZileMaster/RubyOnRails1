@@ -1,5 +1,9 @@
 class RootController < ApplicationController
     
+    def index
+        puts "index"
+    end
+
     def about
         puts " about in server "
         render "about"
