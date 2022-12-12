@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   get '/contact', to:"root#contact"
   get '/about', to: "root#about"
   get '/index', to: "root#index"
+  get '/response', to: "root#api"
   root "root#index"
 end

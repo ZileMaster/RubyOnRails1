@@ -13,4 +13,13 @@ class RootController < ApplicationController
         puts "contact iin server"
         render "contact"
     end
+
+    def api 
+        @response = {
+            :status => 200, 
+            :message => "Hello World!"
+        }
+        render json: @response
+    end
+
 end
