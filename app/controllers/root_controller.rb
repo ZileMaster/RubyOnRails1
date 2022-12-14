@@ -22,4 +22,8 @@ class RootController < ApplicationController
         render json: @response
     end
 
+    def user
+         render json: params[:name]
+    end
+
 end
